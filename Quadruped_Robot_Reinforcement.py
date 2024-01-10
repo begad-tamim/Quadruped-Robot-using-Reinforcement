@@ -76,11 +76,11 @@ def main():
 
     # Find abs path to this file
     my_path = os.path.abspath(os.path.dirname(__file__))
-    results_path = os.path.join(my_path, "../results")
+    results_path = os.path.join(my_path, "./results")
     if contacts:
-        models_path = os.path.join(my_path, "../models/contact")
+        models_path = os.path.join(my_path, "./models/contact")
     else:
-        models_path = os.path.join(my_path, "../models/no_contact")
+        models_path = os.path.join(my_path, "./models/no_contact")
 
     if not os.path.exists(results_path):
         os.makedirs(results_path)
